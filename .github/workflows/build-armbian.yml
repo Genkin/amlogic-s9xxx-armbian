@@ -12,7 +12,7 @@ on:
       set_release:
         description: "Select OS Release."
         required: false
-        default: "jammy"
+        default: "bullseye"
         type: choice
         options:
           - jammy
@@ -20,10 +20,11 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "s905d_beikeyun"
         type: choice
         options:
           - all
+          - s905d_beikeyun
           - s922x_s905x3_s905d_s912_s905l3a
           - s905d
           - s905d-ki-pro
@@ -161,7 +162,7 @@ on:
       armbian_fstype:
         description: "Select armbian rootfs type."
         required: false
-        default: "ext4"
+        default: "btrfs"
         type: choice
         options:
           - ext4
